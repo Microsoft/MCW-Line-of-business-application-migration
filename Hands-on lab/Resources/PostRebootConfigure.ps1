@@ -152,7 +152,7 @@ Unregister-ScheduledTask -TaskName "SetUpVMs" -Confirm:$false
 Set-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\RunOnce" -Name "NextRun" `
     -Value "C:\Windows\System32\WindowsPowerShell\v1.0\Powershell.exe -executionPolicy Unrestricted -File $opsDir\OnLoginConfigure.ps1"
 
-# Download AzCopy. We won't use the aks.ms/downloadazcopy link in case of breaking changes in later versions
+# Download AzCopy. We won't use the aka.ms/downloadazcopy link in case of breaking changes in later versions
 $azcopyUrl = "https://cloudworkshop.blob.core.windows.net/line-of-business-application-migration/azcopy_windows_amd64_10.1.1.zip"
 $azcopyZip = "$opsDir\azcopy.zip"
 Start-BitsTransfer -Source $azcopyUrl -Destination $azcopyZip
