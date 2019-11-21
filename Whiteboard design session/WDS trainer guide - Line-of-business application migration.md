@@ -407,11 +407,11 @@ Directions: Tables reconvene with the larger group to hear the facilitator/SME s
     
     ![Azure portal screenshot showing the Azure Migrate assessment report dashboard.](images/migration_assessment.png)
 
-    The collector appliance uploads the data it gathers to an Azure Migrate project in Azure.  Each appliance supports discovery of up to 5,000 VMs.
+    The collector appliance uploads the data it gathers to an Azure Migrate project in Azure.  Each appliance supports discovery of up to 10,000 VM's for a VMware based appliance or 5,000 VM's for Hyper-V based appliance.
 
     ![Azure portal screenshot showing the 'discover machines' blade of the Azure Migrate service.](images/discover_machines.png)
 
-    In the second phase, assessment, the data from the discovery phase is used to produce a migration assessment report. Each assessment supports up to 10,000 VMs, which may be drawn from multiple collectors. You can create multiple reports from the same source data, and tailor the report using a range of migration parameters. These parameters include:
+    In the second phase, assessment, the data from the discovery phase is used to produce a migration assessment report. Each assessment supports up to 35,000 VMs, which may be drawn from multiple collectors. You can create multiple reports from the same source data, and tailor the report using a range of migration parameters. These parameters include:
 
     - Azure region and monthly uptime.
     - Whether to size VMs based on the existing VMware configuration, or on the measured utilization. In the latter case, a 'comfort factor' allows you to control how much headroom is included in the sizing recommendation.
